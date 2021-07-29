@@ -1,4 +1,4 @@
-This is the section 1 and 2 of Assignments
+This is the section 1,2 and 3 of Assignments
 
 
 <<<<<<< HEAD

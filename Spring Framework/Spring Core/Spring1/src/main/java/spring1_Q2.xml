@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans  xmlns = "http://www.springframework.org/schema/beans"
+   xmlns:xsi = "http://www.w3.org/2001/XMLSchema-instance"
+   xsi:schemaLocation = "http://www.springframework.org/schema/beans
+   http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+   
+	<bean id="Question2" class="com.bhargavik.Spring1.Question2">
+	<property name="questionId" value="1" />
+	<property name="question" value="What are the terminology assosiated with spring?" />
+	<property name="answer1">
+		<list>
+			<value>Beans</value>
+			<value>Autowiring</value>
+			<value>Dependency Injection</value>
+			<value>IOC Container</value>
+			<value>Inversion of Control</value>
+		</list>
+	</property>
+	<property name="answer2">
+		<set>
+			<value>Beans</value>
+			<value>Autowiring</value>
+			<value>Dependency Injection</value>
+			<value>IOC Container</value>
+			<value>Inversion of Control</value>
+		</set>
+	</property>
+	<property name = "answer3">
+         <map>
+            <entry key = "1" value = "Beans"/>
+            <entry key = "2" value = "Autowiring"/>
+            <entry key = "3" value = "Dependency Injection"/>
+            <entry key = "4" value = "IOC Container"/>
+            <entry key = "5" value = "Inversion of Control"/>
+         </map>
+      </property>
+	
+	</bean>
+
+</beans>

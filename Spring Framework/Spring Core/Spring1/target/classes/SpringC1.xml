@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+<bean id="customer" class="com.hingula.Spring1.Customer">
+<!--  	<property name="customerID" value="1999"></property>
+		<property name="customerName" value="Hingula"></property>
+		<property name="customerContact" value="9205622780"></property>
+		<property name="customerAddress" ref="customerAddress"></property>  -->
+		
+		<constructor-arg value="1999" type="int"></constructor-arg>
+		<constructor-arg value="Hingula Bhat" type="java.lang.String"></constructor-arg>
+		<constructor-arg value="9205622780" type="long"></constructor-arg>
+		<constructor-arg ref="customerAddress" ></constructor-arg>
+</bean>
+
+<bean id="customerAddress" class="com.hingula.Spring1.Address">
+	<property name="street" value="G-street"></property>
+	<property name="city" value="Delhi"></property>
+	<property name="state" value="New Delhi"></property>
+	<property name="zip" value="121006"></property>
+	<property name="country" value="India"></property>
+</bean>
+
+</beans>

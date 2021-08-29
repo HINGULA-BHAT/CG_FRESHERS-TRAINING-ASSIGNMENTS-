@@ -1,0 +1,22 @@
+
+div.a{
+  outline-style: solid;
+  outline-color: rgb(0, 0, 0);
+  outline-width: thick;
+  background-color: lightblue;
+}
+div.b{
+  outline-style: solid;
+  outline-color: rgb(0, 0, 0);
+  outline-width: medium;
+  background-color: lightblue;
+}
+div.c{
+  outline-style: solid;
+  outline-color: rgb(0, 0, 0);
+  outline-width: thin;
+  background-color: lightblue;
+}
+div.d{
+    background-color: lightblue;
+}

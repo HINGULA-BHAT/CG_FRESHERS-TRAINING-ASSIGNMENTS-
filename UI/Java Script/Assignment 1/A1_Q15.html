@@ -1,0 +1,38 @@
+<html>
+    <head>
+        <title>Sort</title>
+        <script lang="javascript">
+            var b,i,j,temp;
+            var a;
+            a=[];
+
+            document.write("Entered Array is:");
+            for(i=0;i<5;i++)
+            {
+                b=prompt("Enter Array Element:","0");
+                a[i]=parseInt(b);
+            }
+            for(i=0;i<5;i++)
+            {
+                document.write("<br>"+a[i]);
+            }
+            document.write("<br> Sorted Array is:");
+            for(i=0;i<5;i++)
+            {
+                for(j=0;j<5;j++)
+                {
+                    if(a[i]<a[j])
+                    {
+                        temp=a[i];
+                        a[i]=a[j];
+                        a[j]=temp;
+                    }
+                }
+            }
+            for(i=0;i<5;i++)
+            {
+                document.write("<br>"+a[i]);
+            }
+        </script>
+    </head>
+</html>

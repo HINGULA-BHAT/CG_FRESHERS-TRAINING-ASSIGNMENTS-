@@ -1,12 +1,31 @@
-function alternate(list1,list2)
-{
-    var list=[];
-    for(let i=0; i<list1.length;i++)
-    {
-        list.push(list1[i]);
-        list.push(list2[i]);
+function con(a1, a2){
+    var a=[]
+    if(a1.length<a2.length){
+        for(i=0;i<a1.length;i++){
+            a.push(a1[i]);
+            a.push(a2[i]);
+        }
+        for(i=a1.length;i<a2.length;i++)
+            a.push(a2[i]);
     }
-    return list;
+    else if(a2.length<a1.length){
+        for(i=0;i<a2.length;i++){
+            a.push(a1[i]);
+            a.push(a2[i]);
+        }
+        for(i=a2.length;i<a1.length;i++)
+            a.push(a1[i]);
+    }
+    else{
+        for(i=0;i<a2.length;i++){
+            a.push(a1[i]);
+            a.push(a2[i]);
+        }
+    }
+    return a;
 }
 
-console.log(alternate(['a','b','c'],[1,2,3]));
+a1=["a", "b", "c"];
+a2=[1, 2, 5, 6, 3];
+
+document.write(con(a1, a2));
